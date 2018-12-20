@@ -1,22 +1,32 @@
 $(document).ready(function(){
   console.log('jQuery loaded');
   //var values = [];
-
+  var expenses = {}
+  
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
     //var myItemInStorage = localStorage.getItem($('.items').val());
     var item = $('.items').val()
     var price = $('.price').val()
+    var total = 0
     // localStorage.setItem(($('.items').val()), $('.price').val()); works *
+    var string = ""
     localStorage.setItem(item, price)
-    //values.push($('.text-entry').val())
-    //console.log(values)
+    expenses[item] = price
+    for(var key in expenses) {
+      string += key + " " + "$" + expenses[key] + "\n",
+      total+= parseInt(expenses[key])
+    }
+    // localStorage.setItem(item, price)
+    // //values.push($('.text-entry').val())
+    // expenses[item] = price
     
-    //console.log('myItemInStorage', myItemInStorage);
-
     // display the value here
-    // $('.display').append('<div>' + item + " " + price + '</div>'); // ??
-    $('.display').text(item + " " + price);
+    // $('.display').append('<div>' + item + " " + "$" + price + '</div>'); // ??
+    // $('.display').text(item + " " + "$" + price);
+    $('.display').text(string);
+
+    $('.total').text("Total = " + total)
   });
   
   // $('.btn-submit').on('click', function(){
