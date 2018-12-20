@@ -10,13 +10,25 @@
     <script src="app.js"></script>
   </head>
   <body>
-  <div>
-    <input class="text-entry" type="text" placeholder="enter your information">
+  <div class= "formInfo">
+   <!--  <input class="text-entry" type="text" placeholder="enter your information"> -->
+
+    <label for = "items"> Item </label>
+    <input class = "items" type = "text">
+    <label for = "price"> $ </label>
+    <input class = "price" type = "text">
     <button class="btn-submit" type="button">save value</button>
     <button class="btn-delete" type="button">delete value</button>
   </div>
-  <div class="list-display-field">
-    nothing to display yet
+
+  <form class = "display-field">
+  <!-- <div class="list-display-field"> -->
+  <fieldset>
+    <legend >Expenses</legend>
+    <div  class = "display"></div>
+  </fieldset>
   </div>
+  </form>
+  <div class = total>Total=</div>
   </body>
 </html>
