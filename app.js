@@ -87,13 +87,16 @@ $(document).ready(function(){
   // delete from local storage when delete button clicked
   $('.btn-delete').on('click', function(){
     //$('.text-entry').empty();
+    Object.keys(expenses).forEach(function (key) {
+    delete expenses[key];
+    });
+
     $('.display').empty();
     $('.total').empty();
-    $('.items').val("");
-    $('.price').val("");
     clearAll();
+   
     //document.getElementByClass('items').value = ''
-    $('.total').text("Total =")
+    $('.total').text("Total = ")
     localStorage.removeItem('inputFieldValue');
   });
 
