@@ -7,6 +7,11 @@
 	margin-top: 40px;
 }
 
+.expenses {
+  width: 500px;
+  min-height: 100px;
+}
+
 .total {
 	margin-top: 20px;
 }
@@ -20,14 +25,15 @@
 }
 
 .title{
-	background-color:#e9f7e1;
+	/*background-color:#e9f7e1;*/
+	background-color: #f9e0e0;
 	padding: 20px;
-	margin-top: 0px;
+	/*color:white;*/
 	
 }
 
 .display-field{
-	background-color: #f9e0e0;
+	background-color: #dee2e2;
 	font-size:22px;
 
 }

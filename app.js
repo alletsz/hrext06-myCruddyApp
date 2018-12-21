@@ -28,7 +28,8 @@ $(document).ready(function(){
     // $('.display').append('<div>' + item + " " + "$" + price + '</div>'); // ??
     // $('.display').text(item + " " + "$" + price);
     $('.display').html(string);
-
+    $('.items').val("");
+    $('.price').val("");
     $('.total').html("Total " + " = " + " $" + total)
   });
   
@@ -88,6 +89,8 @@ $(document).ready(function(){
     //$('.text-entry').empty();
     $('.display').empty();
     $('.total').empty();
+    $('.items').val("");
+    $('.price').val("");
     clearAll();
     //document.getElementByClass('items').value = ''
     $('.total').text("Total =")
