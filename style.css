@@ -1,0 +1,42 @@
+/*.formInfo{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+*/
+.display-field{
+	margin-top: 40px;
+}
+
+.total {
+	margin-top: 20px;
+}
+
+.deleted-display{
+	display: none;
+}
+
+.title{
+/*	font-style:;*/
+}
+
+.title{
+	background-color:#e9f7e1;
+	padding: 20px;
+	margin-top: 0px;
+	
+}
+
+.display-field{
+	background-color: #f9e0e0;
+	font-size:22px;
+
+}
+
+.total {
+	font-size: 18px;
+}
+
+body {
+	background-color: #ededed;
+}
+
